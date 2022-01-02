@@ -13,7 +13,10 @@ services:
       - POSTGRES_DB=rentx
     volumes:
       - pgdata:/data/postgres
-    network_mode: host
+    links:
+      - database
+    depends_on:
+      - database
   app:
     build: .
     container_name: rentx
