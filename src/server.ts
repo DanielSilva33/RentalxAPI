@@ -1,11 +1,11 @@
 import "reflect-metadata";
 import "./database"
+import "./shered/container"
 import express from "express";
 import swaggerUi from "swagger-ui-express";
 import swaggerFile from "./swagger.json";
 
 import { routes } from "./routes";
-
 
 
 const app = express();
