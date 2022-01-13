@@ -1,1 +1,3 @@
-# Typescript template
+# RentxAPI
+
+🚧 Em desenvolvimento 🚧
