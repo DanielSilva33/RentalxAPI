@@ -6,9 +6,9 @@ import { authenticateRoutes } from "./authenticate.routes";
 
 const routes = Router();
 
-routes.use(categoriesRoutes);
-routes.use(specificationRoutes);
-routes.use(usersRoutes);
+routes.use("/categories", categoriesRoutes);
+routes.use("/specifications", specificationRoutes);
+routes.use("/users", usersRoutes);
 routes.use(authenticateRoutes);
 
 
