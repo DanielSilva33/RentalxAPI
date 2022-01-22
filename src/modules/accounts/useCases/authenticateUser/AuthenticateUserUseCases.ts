@@ -38,7 +38,7 @@ class AuthenticateUserUseCases {
             throw new AppError("Email or password incerrect!");
         }
 
-        const token = sign({}, process.env.SECRETKEY, {
+        const token = sign({}, "0a13f17bfacbff292c1f0a877abbdc70", {
             subject: user.id,
             expiresIn: "1d"
         });
