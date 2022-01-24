@@ -1,13 +1,13 @@
 import "reflect-metadata";
-import "./database"
-import "./shered/container"
+import "../typeorm"
+import "../../container"
 import express, { Request, Response, NextFunction } from "express";
 import "express-async-errors";
 import swaggerUi from "swagger-ui-express";
-import swaggerFile from "./swagger.json";
+import swaggerFile from "../../../swagger.json";
 
 import { routes } from "./routes";
-import { AppError } from "./errors/AppError";
+import { AppError } from "../../errors/AppError";
 
 
 const app = express();
