@@ -1,3 +1,3 @@
 # RentxAPI
 
-🚧 Em desenvolvimento 🚧
+🚧 Algo incrível está em desenvolvimento 🚧
