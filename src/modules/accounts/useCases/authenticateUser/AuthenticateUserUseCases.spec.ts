@@ -5,10 +5,10 @@ import { CreateUserUseCases } from "../createUser/CreateUserUseCases";
 import { AuthenticateUserUseCases } from "./AuthenticateUserUseCases";
 
 let authenticateUserUseCases: AuthenticateUserUseCases;
-let usersRepositoryInMemory: UsersRepositoryInMemory;0
+let usersRepositoryInMemory: UsersRepositoryInMemory;
 let createUserUseCases: CreateUserUseCases;
 
-describe("Authenticate User" , () => {
+describe("Authenticate User", () => {
     beforeEach(() => {
         usersRepositoryInMemory = new UsersRepositoryInMemory();
         authenticateUserUseCases = new AuthenticateUserUseCases(usersRepositoryInMemory);
