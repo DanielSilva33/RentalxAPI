@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import "../typeorm"
+import createConnection from "../typeorm"
 import "../../container"
 import express, { Request, Response, NextFunction } from "express";
 import "express-async-errors";
@@ -9,7 +9,7 @@ import swaggerFile from "../../../swagger.json";
 import { routes } from "./routes";
 import { AppError } from "../../errors/AppError";
 
-
+createConnection();
 const app = express();
 app.use(express.json());
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerFile));
