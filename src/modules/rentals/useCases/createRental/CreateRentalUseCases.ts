@@ -12,9 +12,9 @@ class CreateRentalUseCases {
     constructor(private rentalsRepository: IRentalsRepository) {}
 
     async execute({
+        user_id,
         car_id,
         expected_return_date,
-        user_id,
     }: IRequest): Promise<Rental> {
         const carUnavailable =
             this.rentalsRepository.findOpenRentalByCar(car_id);
