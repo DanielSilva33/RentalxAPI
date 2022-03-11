@@ -16,8 +16,9 @@ class CreateRentalUseCases {
         car_id,
         expected_return_date,
     }: IRequest): Promise<Rental> {
-        const carUnavailable =
-            this.rentalsRepository.findOpenRentalByCar(car_id);
+        const carUnavailable = await this.rentalsRepository.findOpenRentalByCar(
+            car_id
+        );
 
         if (carUnavailable) {
             throw new AppError("Car is not unavailable!");
