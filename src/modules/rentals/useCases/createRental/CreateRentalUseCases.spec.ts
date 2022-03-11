@@ -2,7 +2,7 @@ import { AppError } from "../../../../shared/errors/AppError";
 import { RentalsRepositoryInMemory } from "../../repositories/in-memory/RentalsRepositoryInMemory";
 import { CreateRentalUseCases } from "./CreateRentalUseCases";
 import dayjs from "dayjs";
-import { DayjsProvider } from "../../../../shared/container/providers/DateProvider/implementations/DayjsProvider";
+import { DayjsProvider } from "../../../../shared/container/providers/DateProvider/implementation/DayjsProvider";
 
 let createRentalUseCases: CreateRentalUseCases;
 let rentlasRepositoryInMemory: RentalsRepositoryInMemory;
