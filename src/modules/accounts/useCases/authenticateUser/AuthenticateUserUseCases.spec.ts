@@ -9,13 +9,13 @@ let usersRepositoryInMemory: UsersRepositoryInMemory;
 let createUserUseCases: CreateUserUseCases;
 
 describe("Authenticate User", () => {
-    beforeEach(() => {
-        usersRepositoryInMemory = new UsersRepositoryInMemory();
-        authenticateUserUseCases = new AuthenticateUserUseCases(
-            usersRepositoryInMemory
-        );
-        createUserUseCases = new CreateUserUseCases(usersRepositoryInMemory);
-    });
+    // beforeEach(() => {
+    //     usersRepositoryInMemory = new UsersRepositoryInMemory();
+    //     authenticateUserUseCases = new AuthenticateUserUseCases(
+    //         usersRepositoryInMemory
+    //     );
+    //     createUserUseCases = new CreateUserUseCases(usersRepositoryInMemory);
+    // });
 
     it("Should be able to athenticate an user", async () => {
         const user: ICreateUserDTO = {
