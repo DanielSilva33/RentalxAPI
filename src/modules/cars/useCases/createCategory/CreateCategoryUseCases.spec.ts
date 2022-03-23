@@ -6,45 +6,47 @@ let createCategoryUseCases: CreateCategoryUseCases;
 let categoriesRepositoryInMemory: CategoriesRepositoryInMemory;
 
 describe("Create Category", () => {
-  
     beforeEach(() => {
         categoriesRepositoryInMemory = new CategoriesRepositoryInMemory();
-        createCategoryUseCases = new CreateCategoryUseCases(categoriesRepositoryInMemory);
+        createCategoryUseCases = new CreateCategoryUseCases(
+            categoriesRepositoryInMemory
+        );
     });
 
     it("Should be able to create a new category", async () => {
         const category = {
             name: "Category Test",
-            description: "Category description test"
-        }
+            description: "Category description test",
+        };
 
         await createCategoryUseCases.execute({
             name: category.name,
-            description: category.description
+            description: category.description,
         });
 
-        const categoryCreated = await categoriesRepositoryInMemory.findByName(category.name);
+        const categoryCreated = await categoriesRepositoryInMemory.findByName(
+            category.name
+        );
 
         expect(categoryCreated).toHaveProperty("id");
     });
 
     it("Should not be able to create a new category with name exists", async () => {
+        const category = {
+            name: "Category Test",
+            description: "Category description test",
+        };
 
-        expect(async () => {
-            const category = {
-                name: "Category Test",
-                description: "Category description test"
-            }
-    
-            await createCategoryUseCases.execute({
+        await createCategoryUseCases.execute({
+            name: category.name,
+            description: category.description,
+        });
+
+        await expect(
+            createCategoryUseCases.execute({
                 name: category.name,
-                description: category.description
-            });
-    
-            await createCategoryUseCases.execute({
-                name: category.name,
-                description: category.description
-            });
-        }).rejects.toBeInstanceOf(AppError);
+                description: category.description,
+            })
+        ).rejects.toEqual(new AppError("Category already exists!"));
     });
 });
