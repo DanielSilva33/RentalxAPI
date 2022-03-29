@@ -715,6 +715,13 @@
   "resolved" "https://registry.npmjs.org/@types/node/-/node-17.0.21.tgz"
   "version" "17.0.21"
 
+"@types/nodemailer@^6.4.4":
+  "integrity" "sha512-Ksw4t7iliXeYGvIQcSIgWQ5BLuC/mljIEbjf615svhZL10PE9t+ei8O9gDaD3FPCasUJn9KTLwz2JFJyiiyuqw=="
+  "resolved" "https://registry.npmjs.org/@types/nodemailer/-/nodemailer-6.4.4.tgz"
+  "version" "6.4.4"
+  dependencies:
+    "@types/node" "*"
+
 "@types/prettier@^2.1.5":
   "integrity" "sha512-ReVR2rLTV1kvtlWFyuot+d1pkpG2Fw/XKE3PDAdj57rbM97ttSp9JZ2UsP+2EHTylra9cUf6JA7tGwW1INzUrA=="
   "resolved" "https://registry.npmjs.org/@types/prettier/-/prettier-2.4.4.tgz"
@@ -3369,9 +3376,9 @@
     "brace-expansion" "^1.1.7"
 
 "minimist@^1.2.0", "minimist@^1.2.5":
-  "integrity" "sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw=="
-  "resolved" "https://registry.npmjs.org/minimist/-/minimist-1.2.5.tgz"
-  "version" "1.2.5"
+  "integrity" "sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q=="
+  "resolved" "https://registry.npmjs.org/minimist/-/minimist-1.2.6.tgz"
+  "version" "1.2.6"
 
 "mkdirp@^0.5.4":
   "integrity" "sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ=="
@@ -3447,6 +3454,11 @@
   "integrity" "sha512-XxYDdcQ6eKqp/YjI+tb2C5WM2LgjnZrfYg4vgQt49EK268b6gYCHsBLrK2qvJo4FmCtqmKezb0WZFK4fkrZNsg=="
   "resolved" "https://registry.npmjs.org/node-releases/-/node-releases-2.0.2.tgz"
   "version" "2.0.2"
+
+"nodemailer@^6.7.3":
+  "integrity" "sha512-KUdDsspqx89sD4UUyUKzdlUOper3hRkDVkrKh/89G+d9WKsU5ox51NWS4tB1XR5dPUdR4SP0E3molyEfOvSa3g=="
+  "resolved" "https://registry.npmjs.org/nodemailer/-/nodemailer-6.7.3.tgz"
+  "version" "6.7.3"
 
 "normalize-path@^3.0.0", "normalize-path@~3.0.0":
   "integrity" "sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA=="
