@@ -2304,6 +2304,18 @@
   "resolved" "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.9.tgz"
   "version" "4.2.9"
 
+"handlebars@^4.7.7":
+  "integrity" "sha512-aAcXm5OAfE/8IXkcZvCepKU3VzW1/39Fb5ZuqMtgI/hT8X2YgoMvBY5dLhq/cpOvw7Lk1nK/UF71aLG/ZnVYRA=="
+  "resolved" "https://registry.npmjs.org/handlebars/-/handlebars-4.7.7.tgz"
+  "version" "4.7.7"
+  dependencies:
+    "minimist" "^1.2.5"
+    "neo-async" "^2.6.0"
+    "source-map" "^0.6.1"
+    "wordwrap" "^1.0.0"
+  optionalDependencies:
+    "uglify-js" "^3.1.4"
+
 "has-bigints@^1.0.1":
   "integrity" "sha512-LSBS2LjbNBTf6287JEbEzvJgftkF5qFkmCo9hDRpAzKhUOlJ+hx8dd4USs00SgsUNwc4617J9ki5YtEClM2ffA=="
   "resolved" "https://registry.npmjs.org/has-bigints/-/has-bigints-1.0.1.tgz"
@@ -3444,6 +3456,11 @@
   "integrity" "sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg=="
   "resolved" "https://registry.npmjs.org/negotiator/-/negotiator-0.6.3.tgz"
   "version" "0.6.3"
+
+"neo-async@^2.6.0":
+  "integrity" "sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw=="
+  "resolved" "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
+  "version" "2.6.2"
 
 "node-int64@^0.4.0":
   "integrity" "sha1-h6kGXNs1XTGC2PlM4RGIuCXGijs="
@@ -4595,6 +4612,11 @@
   "resolved" "https://registry.npmjs.org/typescript/-/typescript-4.6.2.tgz"
   "version" "4.6.2"
 
+"uglify-js@^3.1.4":
+  "integrity" "sha512-6iCVm2omGJbsu3JWac+p6kUiOpg3wFO2f8lIXjfEb8RrmLjzog1wTPMmwKB7swfzzqxj9YM+sGUM++u1qN4qJg=="
+  "resolved" "https://registry.npmjs.org/uglify-js/-/uglify-js-3.15.3.tgz"
+  "version" "3.15.3"
+
 "unbox-primitive@^1.0.1":
   "integrity" "sha512-tZU/3NqK3dA5gpE1KtyiJUrEB0lxnGkMFHptJ7q6ewdZ8s12QrODwNbhIJStmJkd1QDXa1NRA8aF2A1zk/Ypyw=="
   "resolved" "https://registry.npmjs.org/unbox-primitive/-/unbox-primitive-1.0.1.tgz"
@@ -4730,6 +4752,11 @@
   "integrity" "sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ=="
   "resolved" "https://registry.npmjs.org/word-wrap/-/word-wrap-1.2.3.tgz"
   "version" "1.2.3"
+
+"wordwrap@^1.0.0":
+  "integrity" "sha1-J1hIEIkUVqQXHI0CJkQa3pDLyus="
+  "resolved" "https://registry.npmjs.org/wordwrap/-/wordwrap-1.0.0.tgz"
+  "version" "1.0.0"
 
 "wrap-ansi@^7.0.0":
   "integrity" "sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q=="
