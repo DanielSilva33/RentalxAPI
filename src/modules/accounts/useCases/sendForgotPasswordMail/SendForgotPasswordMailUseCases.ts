@@ -20,7 +20,7 @@ class SendForgotPasswordMailUseCases {
         private mailProvider: IMailProvider
     ) {}
 
-    async execute(email: string): Promise<void> {
+    async execute(email: string): Promise<String> {
         const user = await this.usersRepository.findByEmail(email);
 
         const templatePath = resolve(
@@ -57,6 +57,8 @@ class SendForgotPasswordMailUseCases {
             variables,
             templatePath
         );
+
+        return variables.link;
     }
 }
 

@@ -9,9 +9,11 @@ class SendForgotPasswordMailController {
             SendForgotPasswordMailUseCases
         );
 
-        await sendForgotPasswordMailUseCases.execute(email);
+        const sendMail = await sendForgotPasswordMailUseCases.execute(email);
 
-        return response.send();
+        return response.json({
+            message: `Segue URL para alteração da sua senha: ${sendMail}`,
+        });
     }
 }
 
