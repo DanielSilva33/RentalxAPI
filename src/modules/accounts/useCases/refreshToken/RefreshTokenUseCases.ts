@@ -10,6 +10,11 @@ interface IPayLoad {
     email: string;
 }
 
+interface ITokenResponse {
+    token: string;
+    refresh_token: string;
+}
+
 @injectable()
 class RefreshTokenUseCases {
     constructor(
@@ -19,7 +24,7 @@ class RefreshTokenUseCases {
         private dayjsProvider: IDateProvider
     ) {}
 
-    async execute(token: string): Promise<string> {
+    async execute(token: string): Promise<ITokenResponse> {
         const { email, sub } = jwt.verify(
             token,
             auth.secret_refresh_token
@@ -28,6 +33,8 @@ class RefreshTokenUseCases {
             secret_refresh_token,
             expires_in_refresh_token,
             expires_refresh_token_days,
+            secret_token,
+            expires_in_token,
         } = auth;
 
         const user_id = sub;
@@ -59,7 +66,12 @@ class RefreshTokenUseCases {
             expires_date,
         });
 
-        return refresh_token;
+        const newToken = sign({}, process.env.SECRETKEY || secret_token, {
+            subject: user_id,
+            expiresIn: expires_in_token,
+        });
+
+        return { refresh_token, token: newToken };
     }
 }
 
