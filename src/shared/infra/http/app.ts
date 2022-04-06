@@ -1,4 +1,5 @@
 import "reflect-metadata";
+import "dotenv/config";
 import createConnection from "../typeorm";
 import "../../container";
 import express, { Request, Response, NextFunction } from "express";
