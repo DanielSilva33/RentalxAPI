@@ -18,7 +18,7 @@
 </p>
 
 <p id="insomniaButton" align="center">
-  <a href="https://insomnia.rest/run/?label=Rentx%20API&uri=https%3A%2F%2Fraw.githubusercontent.com%2FEliasGcf%2Frentx%2Fmain%2FInsomnia.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+  <a href="https://insomnia.rest/run?label=Rentx%20API&uri=https%3A%2F%2Fraw.githubusercontent.com%2FDanielSilva33%2FRentxAPI%2Fmain%2FInsomnia" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 </p>
 
 ## 🚀 Technologies
