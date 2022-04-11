@@ -27,7 +27,7 @@ describe("Create category controller", () => {
     });
 
     it("Should be able to create a new category", async () => {
-        const responseToken = await request(app).post("/sessions").send({
+        const responseToken = await request(app).post("/api/sessions").send({
             email: "admin@rentx.com.br",
             password: "admin",
         });
@@ -48,7 +48,7 @@ describe("Create category controller", () => {
     });
 
     it("Should not be able to create a new category with name exists", async () => {
-        const responseToken = await request(app).post("/sessions").send({
+        const responseToken = await request(app).post("/api/sessions").send({
             email: "admin@rentx.com.br",
             password: "admin",
         });
